@@ -46,6 +46,13 @@ object Nine {
   /*
     By name parameters.
    */
+  var assertionsEnabled = true
+  def myAssert(predicate: () => Boolean) =
+    if (assertionsEnabled && !predicate())
+      throw new AssertionError
+  def byNameAsser(predicate: => Boolean) =
+    if (assertionsEnabled && !predicate)
+      throw new AssertionError
 
 
 

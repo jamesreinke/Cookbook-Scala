@@ -121,10 +121,10 @@
       <file leaf-file-name="Nine.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Nine.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7176471" vertical-offset="248" max-vertical-offset="992">
-              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.90588236" vertical-offset="248" max-vertical-offset="1104">
+              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding>
-                <element signature="e#1289#1293#0" expanded="true" />
+                <element signature="e#1552#1556#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -956,10 +956,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Nine.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7176471" vertical-offset="248" max-vertical-offset="992">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.90588236" vertical-offset="248" max-vertical-offset="1104">
+          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
-            <element signature="e#1289#1293#0" expanded="true" />
+            <element signature="e#1552#1556#0" expanded="true" />
           </folding>
         </state>
       </provider>
