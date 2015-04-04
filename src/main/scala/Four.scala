@@ -28,8 +28,7 @@ object Four {
     import scala.collection.mutable.Map
     private val cache = Map[String, Int]()
 
-    // we don't want outsiders touching our cheese
-    private var sum = 0
+    private var sum = 0 // we don't want outsiders touching our cheese
 
     def add(b: Byte): Unit = sum += b
     def checksum(): Int = ~(sum & 0xFF) + 1

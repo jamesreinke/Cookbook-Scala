@@ -42,9 +42,9 @@ object Six {
       new Rational(numerator, denominator * i)
     def / (that: Rational): Rational =
       new Rational(numerator * that.denominator, that.numerator * denominator)
-    // with these operator, it is the case that a rational has to be on the left-hand side
-    implicit def intToRationl(x: Int) = new Rational(x)
-    // now rational can appear on the right hand side of an integer statement
+
+    implicit def intToRationl(x: Int) = new Rational(x)// with these operator, it is the case that a rational has to be on the left-hand side
+
 
     /*
       Recursive solution to greatest common divisor.

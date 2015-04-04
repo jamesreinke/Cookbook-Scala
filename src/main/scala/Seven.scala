@@ -8,16 +8,20 @@ object Seven {
     All hail to the functional style.  Creates a multiplication table.
     Notice the useful yield syntax!
    */
-  // Returns a row as a sequence
+    /*
+      Returns a row as a sequence
+      */
   def makeRowSeq(row: Int) =
     for(col <- 1 to 10) yield {
       val prod = (row * col).toString
       val padding = " " * (4 - prod.length)
       padding + prod
     }
-  // Returns a row as a string
-  def makeRow(row: Int) = makeRowSeq(row).mkString
-  // Returns table as a string with one row per line
+
+  def makeRow(row: Int) = makeRowSeq(row).mkString // Returns a row as a string
+    /*
+      Returns table as a string with one row per line
+      */
   def multiTable() = {
 
     val tableSeq = for (row <- 1 to 10) yield makeRow(row)
@@ -38,7 +42,9 @@ object Seven {
     for( file <- filesHere)
       println(file)
 
-    // yields an Array of files
+    /*
+     yields an Array of files
+      */
     def scalaFiles =
       for {
         file <- filesHere
@@ -62,11 +68,15 @@ object Seven {
     }
     val file = new FileReader("inputs.txt")
     try {
-      // do something with the file
+      /*
+        Do anything what we want with the file here.
+       */
     } finally {
       file.close() // close the file with or without an exception
     }
-    // match expression
+    /*
+      match expression
+      */
     for(i <- 0 to 100) i % 10 match {
       case 0 => println(i)
     }

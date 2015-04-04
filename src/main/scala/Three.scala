@@ -13,10 +13,8 @@ object Three {
     for (i <- 0 to 100){
       print(i + " ")
     }
-    // all types are objects with methods, including things like an array
-    val numbersArray = Array("zero", "one", "two")
-    // this next array initialization is equivalent to the one above
-    val lettersArray = Array.apply(("a", "b", "c"))
+    val numbersArray = Array("zero", "one", "two") // all types are objects with methods, including things like an array
+    val lettersArray = Array.apply(("a", "b", "c")) // this array initialization is equivalent to the one above
 
 
     /*

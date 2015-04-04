@@ -42,7 +42,9 @@ object Eight {
   /*
     First class functions.
    */
-  // an example of a function literal
+    /*
+     an example of a function literal
+      */
   val increase = (x: Int) => {
     println("Your one integer will arrive shortly...")
     for(i <- 0 to 4) {
@@ -112,6 +114,7 @@ object Eight {
   def boom(x: Int): Int =
     if (x == 0) throw new Exception("bang!") // exception stack trace will only be one frame for boom no matter what value for x
     else boom(x - 1)
+
     /*
       In these examples the compiler will not optimize for tail recursion.
      */

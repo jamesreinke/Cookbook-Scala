@@ -40,13 +40,15 @@ object Five {
     val little: Short = 238
     val littler: Byte = 38
 
-    // float versus double
+    /*
+      Float versus dubs.
+     */
     val dubs = 1.567
     val floats = 1.567F
     val dubDubs = 3e7 // exponentiation; byyyyaaaa
 
-    // raw doggin strings; trips quotes
-    println("""I can "write" whatever I want \s and not worry about anything "weird" happening.""")
+    println("""I can "write" whatever I want '\s' and not worry about anything "weird" happening.""")
+    println("""It's like adding another quote god.  I hope sober you understands the reference""")
 
 
     // operators
