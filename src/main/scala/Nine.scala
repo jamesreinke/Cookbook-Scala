@@ -32,9 +32,9 @@ object Nine {
   def painOldSum(x: Int, y: Int) = x + y
   def curriedSum(x: Int)(y: Int) = x + y
   def curriedSumEquiv(x: Int) = (y: Int) => x + y // applies the scope in order of paremeters; lambda calculus!
-  val first = curriedSumEquiv(1)
+  val first = curriedSumEquiv(1) // _ represents the rest of the arguments
   val second = first(2) // = 3
-  val onePlus = curriedSum(1)
+  val onePlus = curriedSum(1)_
   val twoPlus = onePlus(2) // = 3
 
   /*

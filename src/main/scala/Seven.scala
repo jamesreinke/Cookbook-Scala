@@ -54,6 +54,7 @@ object Seven {
     /*
       Throwing and catching exceptions!
      */
+    val n = 100
     val half =
       if (n % 2 == 0)
           n / 2

@@ -49,7 +49,7 @@ object Eight {
     println("Your one integer will arrive shortly...")
     for(i <- 0 to 4) {
       println((5-i) +" seconds remaining")
-      sys.wait(1000)
+      Thread.sleep(1000)
     }
     x + 1
   }

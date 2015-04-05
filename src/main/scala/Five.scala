@@ -7,7 +7,7 @@ object Five {
 
   /*
     Bits, Bytes and other Cheese
-   */
+
   Byte // 8-bit signed two's complement integer
   Short // 16-bit signed two's complement integer
   Int // 32-bit signed two's complement integer
@@ -17,6 +17,7 @@ object Five {
   Float // 32-bit IEEE 754 single-precision float
   Double // 64-bit IEEE 754 double-precision float
   Boolean // true or false
+  */
 
 
   /*
@@ -28,9 +29,6 @@ object Five {
     val hex = 0x5
     val hex2 = 0x00FF
     val magic = 0xcafebabe
-    // octal base 8: 0...
-    val oct = 035
-
 
     // to create a long integer...
     val tower = 35L
