@@ -4,8 +4,9 @@ Case classes and Pattern Matching
 object Fifteen {
 	/*
 	A Simple Example
+	The sealed prefix ensures that matched cases are exhaustive.
 	*/
-	abstract class Expr
+	sealed abstract class Expr
 	case class Var(name: String) extends Expr
 	case class Number(num: Double) extends Expr
 	case class UnOp(
@@ -82,6 +83,32 @@ object Fifteen {
 		case BinOp("+", x, y) if x == y =>
 			BinOp("*", x, Number(2))
 		case _ => e
+	}
+
+	/*
+	Pattern Overlaps
+	*/
+	def simplifyAll(expr: Expr): Expr = expr match {
+		case UnOp("-", UnOp("-", e)) =>
+			simplifyAll(e)
+		case BinOp("+", e, Number(0)) =>
+			simplifyAll(e)
+		case binOp("*", e, Number(1)) =>
+			simplifyAll(e)
+		case UnOp(op, e) =>
+			UnOp(op, simplifyAll(e))
+		case BinOp(op, l, r) =>
+			BinOp(op, simplifyAll(l), simplifyAll(r))
+		case _ => expr
+	}
+
+	/*
+	Since our class is sealed, we need an exhaustive match.
+	@unchecked removes this requirement
+	*/
+	def describe(e: Expr): String = (e: @unchecked) match {
+		case Number(_) 	=> "a number"
+		case Var(_) 	=> "a variable"
 	}
 
 
