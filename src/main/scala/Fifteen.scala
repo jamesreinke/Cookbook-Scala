@@ -21,6 +21,19 @@ object Fifteen {
 		case BinOp("*", e, Number(1)) => e
 		case _ => expr
 	}
+	def describe(x: Any): String = x match {
+		case 5 => "five"
+		case true => "truth"
+		case "hello" => "hi!"
+		case Nil => "Nil"
+		// we could also use _ for the wildcard
+		case somethingElse => "no pattern matched for object " + somethingElse
+	}
+	expr match {
+		// three element list starting with 0
+		case List(0, _, _) => println("found it!")
+		case _ => println("not found")
+	}
 
 
 	/*
