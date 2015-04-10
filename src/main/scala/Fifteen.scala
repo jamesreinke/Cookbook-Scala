@@ -32,4 +32,5 @@ object Fifteen {
 	println(op.left)
 	println(op.right == Var("x")) // should return true
 	var opCopy = op.copy(operator = "-") // automatic implementation of the copy method
+	println("")
 }
